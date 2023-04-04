@@ -2,11 +2,11 @@
 This repo is the source code for [Winhalla](https://winhalla.app) as of 04/04/2023
 All commit history has been deleted due to old commits containing sensitive credentials
 ---------
-To understand more the why all this code is here, you should take a look at the [live app](https://play.google.com/store/apps/details?id=com.winhalla.app)
-This is my first more-than-100-line project ever, that has been updated and refactor an embarassing amount of times.
-It has an embarassing amount of code duplications, misoptimisation and an absence of documentation, that would take days to fix. As the gain would be close to zero since the project is no longer maintained, I decided to leave the project as is.
-I learned the hard way that I should've documented this on the spot.
-Also the abscence of types in JS is horrible to deal with when refactoring.
+To understand more the why all this code is here, you should take a look at the [live app](https://play.google.com/store/apps/details?id=com.winhalla.app)  
+This is my first more-than-100-line project ever, that has been updated and refactor an embarassing amount of times.  
+It has an embarassing amount of code duplications, misoptimisation and an absence of documentation, that would take days to fix. As the gain would be close to zero since the project is no longer maintained, I decided to leave the project as is.  
+I learned the hard way that I should've documented this on the spot.  
+Also the abscence of types in JS is horrible to deal with when refactoring.  
 
 ---
 ### Quick explaination of the code if you're brave enough to go here.
