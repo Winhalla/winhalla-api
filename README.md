@@ -28,7 +28,7 @@ An ancient reliquary of http requests to the [Brawlhalla API](https://dev.brawlh
 
 **friendLink.js**: This is the referral link system.  
 **sponsorships.js**: Track sponsorships results.  
-**gamemodes/***: All things matches-related (see app) lobbyFFA.js for matchmaking, getFFA for inside the match and exit.js to exit the match. All other files are unused and were abandonned WIPs  
+**gamemodes/**\*: All things matches-related (see app) lobbyFFA.js for matchmaking, getFFA for inside the match and exit.js to exit the match. All other files are unused and were abandonned WIPs  
 **solo/***: All things quest-related  
 
 ---
@@ -48,7 +48,7 @@ It's merely an embarassing showcase of my own coding abilities when I started pr
 
 #### Why did I publish if it's embarassing? 
 May it be embarassing, it shows that I was able to put together a website, an app and a backend while knowing barely anything about programming beforehand.
-I know that this code is bad, but i know **why** it is bad. I know why because i learnt a lot since then.
+I know that this code is bad, but i know **why** it is bad. I know why because i learnt a lot since then.  
 I think seeing other people's newbie code helps new programmers not feel overwhelmed by the very neat code from (most) big libraries. This code may be bad code, but every file being mostly independent, you don't need to go through the whole code to understand a single file 
 
 
