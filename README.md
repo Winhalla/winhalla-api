@@ -10,36 +10,36 @@ Also the abscence of types in JS is horrible to deal with when refactoring.
 
 ---
 ### Quick explaination of the code if you're brave enough to go here.
-**Index.js**
+**Index.js**  
 Entry point of the app, supposed to be the setup of the http server, but in the course of the last-minute commits, became home to multiple endpoints as well.
 
 ---
 
-**models/***
+**models/***  
 All files here represent MongoDB schemas for different document types. Some are here but were never used.
 
 ---
-**requests/***
+**requests/***  
 An ancient reliquary of http requests to the [Brawlhalla API](https://dev.brawlhalla.com), these files are not used anymore and have been replaced by **utils/functions/callBrawlhallaApi.js**
 
 ---
-**routes/***
-(Poorly organised) endpoints. They are the core of the app. Most are self-explanatory in their name, i'll go through the ones that aren't.
+**routes/***  
+(Poorly organised) endpoints. They are the core of the app. Most are self-explanatory in their name, i'll go through the ones that aren't.  
 
-**friendLink.js**: This is the referral link system.
-**sponsorships.js**: Track sponsorships results.
-**gamemodes/***: All things matches-related (see app) lobbyFFA.js for matchmaking, getFFA for inside the match and exit.js to exit the match. All other files are unused and were abandonned WIPs
-**solo/***: All things quest-related
+**friendLink.js**: This is the referral link system.  
+**sponsorships.js**: Track sponsorships results.  
+**gamemodes/***: All things matches-related (see app) lobbyFFA.js for matchmaking, getFFA for inside the match and exit.js to exit the match. All other files are unused and were abandonned WIPs  
+**solo/***: All things quest-related  
 
 ---
-**utils/*** 
+**utils/***   
 Functions that are either here because routes files would be too long and unreadable or because they are used multiple times. I'll go through the most important ones
 
-**callBrawlhallaApi.js**: Used to call the Brawlhalla API to get player's stats. This is used on so many places centralizing here was important.
-**checkEveryMin.js**: Basically a cron job, multiple functions here run every 1-5m to check for match end or quest end.
-**dailyChallenge.js**: 4 functions called by endpoints in index.js 
-**ffaEnd.js**: calculate rewards at end of match and close match
-**solo/***: different utils to manage quests lifecycle
+**callBrawlhallaApi.js**: Used to call the Brawlhalla API to get player's stats. This is used on so many places centralizing here was important.  
+**checkEveryMin.js**: Basically a cron job, multiple functions here run every 1-5m to check for match end or quest end.  
+**dailyChallenge.js**: 4 functions called by endpoints in index.js   
+**ffaEnd.js**: calculate rewards at end of match and close match  
+**solo/***: different utils to manage quests lifecycle  
 
 ---
 ### A last word.
