@@ -1,0 +1,34 @@
+{
+    "0": [
+        {
+            "name": "Play one match",
+            "goal": "winhallaMatch",
+            "goalNb": 1,
+            "reward": 20
+        },
+        {
+            "name": "Complete a quest",
+            "goal": "winhallaQuest",
+            "goalNb": 1,
+            "reward": 20
+        }
+    ],
+
+    "1": [
+        {
+            "name": "Watch an ad",
+            "goal": "ad",
+            "goalNb": 1,
+            "reward": 30
+        }
+    ],
+
+    "2": [
+        {
+            "name": "Invite a friend",
+            "goal": "referral",
+            "goalNb": 1,
+            "reward": 300
+        }
+    ]
+}

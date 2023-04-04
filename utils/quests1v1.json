@@ -1,0 +1,35 @@
+[
+    {
+        "name":"Do 6 KOs",
+        "uncompatibility": [1,4,5]
+    },
+    {
+        "name":"Win 2 games",
+        "uncompatibility": [0,4]
+    },
+    {
+        "name":"Do a gadget KO",
+        "uncompatibility":[3]
+    },
+    {
+        "name":"Do 75 damage with a spikeball",        
+        "uncompatibility":[2]
+    },
+    {
+        "name":"Gain 50 ELO of any kind (loosed games doesn't count)",                
+        "uncompatibility":[0,1]
+    },
+    {
+        "name":"Do 2 unarmed KOs",
+        "uncompatibility":[0]
+    },
+    {
+        "name":"Win 2 games with a character below level 10 (faut rendre ça adaptive si y'a des gens qui ont pas de persos en dessous du niveau 10",
+        "uncompatibility":[1,4]
+    },
+    {
+        "name":"Do 1500 damages",
+        "uncompatibility":[0]
+    }
+]
+

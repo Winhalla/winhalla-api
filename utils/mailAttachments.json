@@ -1,0 +1,56 @@
+{
+  "buyConfirmation": [
+    {
+      "filename":"1.png",
+      "path":"views/assets/buyConfirmation/1.png",
+      "cid":"1.png"
+    },{
+      "filename":"2.png",
+      "path":"views/assets/buyConfirmation/2.png",
+      "cid":"2.png"
+    },{
+      "filename":"insta.png",
+      "path":"views/assets/insta.png",
+      "cid":"insta.png"
+    },{
+      "filename":"discord.png",
+      "path":"views/assets/discord.png",
+      "cid":"discord.png"
+    },{
+      "filename":"youtube.png",
+      "path":"views/assets/youtube.png",
+      "cid":"youtube.png"
+    }
+  ],
+  "paypalConfirmation": [
+    {
+      "filename":"insta.png",
+      "path":"views/assets/insta.png",
+      "cid":"insta.png"
+    },{
+      "filename":"discord.png",
+      "path":"views/assets/discord.png",
+      "cid":"discord.png"
+    },{
+      "filename":"youtube.png",
+      "path":"views/assets/youtube.png",
+      "cid":"youtube.png"
+    },{
+      "filename":"PayPal_ICON.png",
+      "path":"views/assets/paypalConfirmation/PayPal_ICON.png",
+      "cid":"PayPal_ICON.png"
+    },{
+      "filename":"1.png",
+      "path":"views/assets/paypalConfirmation/1.png",
+      "cid":"1.png"
+    },{
+      "filename":"2.png",
+      "path":"views/assets/paypalConfirmation/2.png",
+      "cid":"2.png"
+    },{
+      "filename":"3.png",
+      "path":"views/assets/paypalConfirmation/3.png",
+      "cid":"3.png"
+    }
+  ]
+}
