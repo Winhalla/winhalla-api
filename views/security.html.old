@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security alert</title>
+</head>
+<style>
+body{
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+h1{
+    color: #ff3333;
+}
+h5,h6{
+    text-align: left;
+    font-size: large;
+    padding-left: 6rem;
+    font-weight: 400;
+}
+</style>
+<body>
+    <h1>Security alert level {{level}}</h1><br>
+    <h2>Action: {{action}}</h2>
+    <h2>Admin: {{admin}}</h2><br><br>
+
+
+    <h5>A change has been detected in the websites configuration</h5>
+
+    <h6>For more information, go see <a href="http://localhost:3000/feltrom/admin">Admin page</a></h6>
+</body>
+</html>

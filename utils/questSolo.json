@@ -1,0 +1,284 @@
+{
+    "weekly":[
+    {
+        "id":0,
+        "name":"Do 100 KOs",
+        "uncompatibility": [1,4,0,9, 10],
+        "goal":100,
+        "need":"stats",
+        "category":["legends:kos"],
+        "reward":50
+    },
+    {
+        "id":1,
+        "name":"Win 30 games",
+        "uncompatibility": [11,0,4,1,8,10],
+        "goal":30,
+        "need":"stats",
+        "category":["wins"],
+        "reward":50
+    },
+    {
+        "id":2,
+        "name":"Do 7 gadget KOs",
+        "uncompatibility":[3,2],
+        "goal":7,
+        "need":"stats",
+        "category":["kospikeball","kosidekick","komine","kobomb"],
+        "reward":50
+    },
+    {
+        "id":3,
+        "name":"Do 2000 damage with a spikeball",
+        "uncompatibility":[2,3],
+        "goal":2000,
+        "need":"stats",
+        "category":["damagespikeball"],
+        "reward":50
+    },
+    {
+        "id":4,
+        "name":"Win 20 ranked 1v1 games",
+        "uncompatibility":[1,4,9, 10],
+        "goal":20,
+        "need":"ranked",
+        "category":["wins"],
+        "reward":50
+    },
+    {
+        "id":5,
+        "name":"Do 7 unarmed KOs",
+        "uncompatibility":[11,0,5,6],
+        "goal":7,
+        "need":"stats",
+        "category":["legends:kounarmed"],
+        "reward":50
+    },
+    {
+        "id":6,
+        "name":"Do 1000 unarmed damage",
+        "uncompatibility":[5,6],
+        "goal":1000,
+        "need":"stats",
+        "category":["legends:damageunarmed"],
+        "reward":50
+    },
+    {
+        "id":7,
+        "name":"Do 12500 damage",
+        "uncompatibility":[7,11],
+        "goal":12500,
+        "need":"stats",
+        "category":["legends:damagedealt"],
+        "reward":50
+    },
+    {
+        "id":8,
+        "name":"Win 75 games",
+        "uncompatibility": [11,0,4,1,8],
+        "goal":75,
+        "need":"stats",
+        "category":["wins"],
+        "reward":100
+    },
+        {
+            "id":9,
+            "name":"Do 40000 damage",
+            "uncompatibility":[7,9, 10],
+            "goal":40000,
+            "need":"stats",
+            "category":["legends:damagedealt"],
+            "reward":100
+        }
+    ,{
+        "id":10,
+        "name":"Do 40000 damage",
+        "uncompatibility":[7,10, 9],
+        "goal":40000,
+        "need":"stats",
+        "category":["legends:damagedealt"],
+        "reward":100
+    },
+        {
+        "id":11,
+        "name":"Do 500 KOs",
+        "uncompatibility": [11,1,4,0,8],
+        "goal":500,
+        "need":"stats",
+        "category":["legends:kos"],
+        "reward":200
+    },{
+            "id":12,
+            "name":"Do 7500 $$weapon$$ damage",
+            "uncompatibility":[12,13,14],
+            "goal":7500,
+            "need":"stats",
+            "category":["weapon:damage"],
+            "reward":50,
+            "type": "weapon"
+        },
+        {
+            "id":13,
+            "name":"Do 75 $$weapon$$ KOs",
+            "uncompatibility":[12,13,14],
+            "goal":75,
+            "need":"stats",
+            "category":["weapon:ko"],
+            "reward":50,
+            "type": "weapon"
+        },
+        {
+            "id":14,
+            "name":"Do 7500 $$weapon$$ damage",
+            "uncompatibility":[12,13,14],
+            "goal":7500,
+            "need":"stats",
+            "category":["weapon:damage"],
+            "reward":50,
+            "type": "weapon"
+        }
+    ],
+
+"daily":[
+    {
+        "id":0,
+        "name":"Do 30 KOs",
+        "uncompatibility": [1,4,0,8],
+        "goal":30,
+        "need":"stats",
+        "category":["legends:kos"],
+        "reward":10
+    },
+    {
+        "id":1,
+        "name":"Win 8 games",
+        "uncompatibility": [0,4,1,8],
+        "goal":8,
+        "need":"stats",
+        "category":["wins"],
+        "reward":10
+    },
+    {
+        "id":2,
+        "name":"Do 1 gadget KO",
+        "uncompatibility":[3,2],
+        "goal":1,
+        "need":"stats",
+        "category":["kospikeball","kosidekick","komine","kobomb"],
+        "reward":10
+    },
+    {
+        "id":3,
+        "name":"Do 300 damage with a spikeball",
+        "uncompatibility":[2,3],
+        "goal":300,
+        "need":"stats",
+        "category":["damagespikeball"],
+        "reward":10
+
+    },
+    {
+        "id":4,
+        "name":"Win 4 ranked 1v1 games",
+        "uncompatibility":[0,1,4,8,9],
+        "goal":4,
+        "need":"ranked",
+        "category":["wins"],
+        "reward":10
+    },
+    {
+        "id":5,
+        "name":"Do 1 unarmed KO",
+        "uncompatibility":[6,5],
+        "goal":1,
+        "need":"stats",
+        "category":["legends:kounarmed"],
+        "reward":10
+    },
+    {
+        "id":6,
+        "name":"Do 125 unarmed damage",
+        "uncompatibility":[6,5],
+        "goal":125,
+        "need":"stats",
+        "category":["legends:damageunarmed"],
+        "reward":10
+    },
+    {
+        "id":7,
+        "name":"Do 2500 damage",
+        "uncompatibility":[7,10],
+        "goal":2500,
+        "need":"stats",
+        "category":["legends:damagedealt"],
+        "reward":10
+    },
+    {
+        "id":8,
+        "name":"Do 50 KOs",
+        "uncompatibility": [1,4,0,8],
+        "goal":50,
+        "need":"stats",
+        "category":["legends:kos"],
+        "reward":20
+    },
+    {
+        "id":9,
+        "name":"Win 16 ranked 1v1 games",
+        "uncompatibility":[0,1,4,9],
+        "goal":16,
+        "need":"ranked",
+        "category":["wins"],
+        "reward":20
+    },{
+        "id":10,
+        "name":"Do 15000 damage",
+        "uncompatibility":[7,10],
+        "goal":15000,
+        "need":"stats",
+        "category":["legends:damagedealt"],
+        "reward":30
+    },
+    {
+        "id":11,
+        "name":"Play 15 ranked 1v1 games",
+        "uncompatibility":[11],
+        "goal":15,
+        "need":"ranked",
+        "category":["games"],
+        "reward":10
+    },{
+        "id":12,
+        "name":"Do 1500 $$weapon$$ damage",
+        "uncompatibility":[12,13,14],
+        "goal":1500,
+        "need":"stats",
+        "category":["weapon:damage"],
+        "reward":10,
+        "type": "weapon"
+    },
+    {
+        "id":13,
+        "name":"Do 20 $$weapon$$ KOs",
+        "uncompatibility":[12,13,14],
+        "goal":20,
+        "need":"stats",
+        "category":["weapon:ko"],
+        "reward":10,
+        "type": "weapon"
+    },
+    {
+        "id":14,
+        "name":"Do 1500 $$weapon$$ damage",
+        "uncompatibility":[12,13,14],
+        "goal":1500,
+        "need":"stats",
+        "category":["weapon:damage"],
+        "reward":10,
+        "type": "weapon"
+    }
+]
+
+
+}
+

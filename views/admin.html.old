@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}} admin page - Winhalla</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .half {
+            width: 50%;
+            background: #ffffff;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .block {
+            display: block;
+        }
+
+        #status {
+            padding-top: 4rem;
+            padding-left: 4rem;
+        }
+
+        .border {
+            border-bottom: 2px solid #000000;
+        }
+    </style>
+    <script>
+        let config;
+        const res = new Promise(async () => {
+            try {
+
+                config = await fetch('/feltrom/config?pwd=' + (new URL(document.location)).searchParams.get('pwd'))
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (response) {
+                        config = response
+                        config.forEach((e, i) => {
+                            if (e.name == "GAMEMODES STATUS") {
+                                document.getElementById("configs").innerHTML = document.getElementById("configs").innerHTML + `<li><h3>${e.name}</h3>`
+
+                                Object.keys(e.value).forEach(el => {
+                                    document.getElementById("configs").innerHTML = document.getElementById("configs").innerHTML + `<br><div class="flex"<h4>${el}:</h4><input type=checkbox ${e.value[el] == true ? "checked" : " "} ></input></div>`
+                                })
+                            } else if (e.name == "STATUS") {
+                                document.getElementById("status").innerHTML = document.getElementById("status").innerHTML + `<h1>STATUS:</h1><br><h2>${e.value == true ? "UP" : "DOWN"}</h2><button onclick=toggleDownUp()>${e.value == true ? "DOWN" : "REACTIVATE"} SITE</button>`
+                            } else {
+                                document.getElementById("configs").innerHTML = document.getElementById("configs").innerHTML + `<li><h3>${e.name}</h3><br><input value=${e.value} size=50></input></li>`
+                            }
+                        });
+                    })
+
+            } catch (err) {
+                console.log(err)
+            }
+        })
+        console.log()
+        function toggleDownUp() {
+            fetch("http://localhost:4000/feltrom/toggleDownUp", {method:"POST"})
+                .then(response => response.text())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+        }
+    </script>
+</head>
+
+<body>
+    <div class="flex border">
+        {{name}}
+        <div class="block half">
+            <h2 class="">Config</h2>
+            <ul id=configs>
+            </ul>
+        </div>
+        <div class="block half">
+            <h2 class="">Freezed</h2>
+            <ul id=freezed>
+            </ul>
+        </div>
+    </div>
+
+    <div id=status>
+    </div>
+
+
+</body>
+
+</html>

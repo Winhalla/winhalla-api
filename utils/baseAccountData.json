@@ -1,0 +1,32 @@
+{
+    "stats": {
+        "xp": 0,
+        "level": 1,
+        "xp_percentage": 0,
+        "games": 0,
+        "wins": 0,
+        "damagebomb": "0",
+        "damagemine": "0",
+        "damagespikeball": "0",
+        "damagesidekick": "0",
+        "hitsnowball": 0,
+        "kobomb": 0,
+        "komine": 0,
+        "kospikeball": 0,
+        "kosidekick": 0,
+        "kosnowball": 0,
+        "legends": []
+    },
+    "ranked": {
+        "rating": 1200,
+        "peak_rating": 1200,
+        "tier": "Silver 2",
+        "wins": 0,
+        "games": 0,
+        "region": "EU",
+        "global_rank": 0,
+        "region_rank": 0,
+        "legends": [],
+        "2v2": []
+    }
+}
