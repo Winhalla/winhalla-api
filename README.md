@@ -1,15 +1,27 @@
-
+# Winhalla API
 This repo is the source code for [Winhalla](https://winhalla.app) as of 04/04/2023
 All commit history has been deleted due to old commits containing sensitive credentials
 ---------
-To understand more the why all this code is here, you should take a look at the [live app](https://play.google.com/store/apps/details?id=com.winhalla.app)  
-This is my first more-than-100-line project ever, that has been updated and refactor an embarassing amount of times.  
-It has an embarassing amount of code duplications, misoptimisation and an absence of documentation, that would take days to fix. As the gain would be close to zero since the project is no longer maintained, I decided to leave the project as is.  
+
+## Technical data
+Made with NodeJS and express in javascript (I used to be a typescript hater)  
+Tech details :
+* ExpressJS http REST API (with express-sessions)
+* Socket.io for realtime
+* Nodemailer for mail sending (custom html rendering)
+* MongoDB as database
+* 3rd party auth from Google, Apple and Steam (a big PITA that one) 
+* API data retrieval from Brawlhalla, Steam, Google and Apple
+* TOTP password auth for admin page (was removed in a previous release though)
+
+To understand more why all this code is here, you should take a look at the [live app](https://play.google.com/store/apps/details?id=com.winhalla.app)  
+This is my first more-than-100-line project ever, that has been updated and refactor an embarrassing amount of times.  
+It has an embarrassing amount of code duplications, misoptimisation and an absence of documentation, that would take days to fix. As the gain would be close to zero since the project is no longer maintained, I decided to leave the project as is.  
 I learned the hard way that I should've documented this on the spot.  
-Also the abscence of types in JS is horrible to deal with when refactoring.  
+Also the absence of types in JS is horrible to deal with when refactoring.  
 
 ---
-### Quick explaination of the code if you're brave enough to go here.
+### Quick explanation of the code if you're brave enough to go here.
 **Index.js**  
 Entry point of the app, supposed to be the setup of the http server, but in the course of the last-minute commits, became home to multiple endpoints as well.
 
@@ -24,11 +36,11 @@ An ancient reliquary of http requests to the [Brawlhalla API](https://dev.brawlh
 
 ---
 **routes/***  
-(Poorly organised) endpoints. They are the core of the app. Most are self-explanatory in their name, i'll go through the ones that aren't.  
+(Poorly organised) endpoints. They are the core of the app. Most are self-explanatory in their name, I'll go through the ones that aren't.  
 
 **friendLink.js**: This is the referral link system.  
 **sponsorships.js**: Track sponsorships results.  
-**gamemodes/**\*: All things matches-related (see app) lobbyFFA.js for matchmaking, getFFA for inside the match and exit.js to exit the match. All other files are unused and were abandonned WIPs  
+**gamemodes/**\*: All things matches-related (see app) lobbyFFA.js for matchmaking, getFFA for inside the match and exit.js to exit the match. All other files are unused and were abandoned WIPs  
 **solo/***: All things quest-related  
 
 ---
@@ -43,12 +55,5 @@ Functions that are either here because routes files would be too long and unread
 
 ---
 ### A last word.
-This code is not meant to be run by anyone, as adapting it to allow anyone to run it in standalone would take a long time, and it would have absoloutely no use.
-It's merely an embarassing showcase of my own coding abilities when I started programming.
-
-#### Why did I publish if it's embarassing? 
-May it be embarassing, it shows that I was able to put together a website, an app and a backend while knowing barely anything about programming beforehand.
-I know that this code is bad, but i know **why** it is bad. I know why because i learnt a lot since then.  
-I think seeing other people's newbie code helps new programmers not feel overwhelmed by the very neat code from (most) big libraries. This code may be bad code, but every file being mostly independent, you don't need to go through the whole code to understand a single file 
-
-
+This code is not meant to be run by anyone, as adapting it to allow anyone to run it in standalone would take a long time, and it would have absolutely no use.
+It's merely a showcase of my (approximative) coding abilities when I started programming.
