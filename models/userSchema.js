@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
-    tutorialStep:{
-        hasDoneTutorialMatch: {type:Boolean, default:false},
-        hasDoneTutorialQuest: {type:Boolean, default:false},
+    tutorialStep: {
+        hasDoneTutorialMatch: {type: Boolean, default: false},
+        hasDoneTutorialQuest: {type: Boolean, default: false},
     },
     dailyChallenge: {
         lastRefresh: {type: Number,},
@@ -10,10 +10,10 @@ const userSchema = new mongoose.Schema({
             {
                 name: String,
                 goalNb: Number,
-                progress: {type:Number, default: 0},
+                progress: {type: Number, default: 0},
                 completed: Boolean,
                 active: Boolean,
-                goal:String,
+                goal: String,
                 reward: Number
             }
         ],
@@ -37,8 +37,8 @@ const userSchema = new mongoose.Schema({
     avatarURL: String,
     miniAvatarURL: String,
     coins: Number,
-    lastRefresh:{
-        quests:Number,
+    lastRefresh: {
+        quests: Number,
     },
     lastGames: [{
         gm: String,

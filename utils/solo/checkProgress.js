@@ -3,7 +3,7 @@ const user = require('../../models/userSchema.js');
 const centurionWatcher = require('../centurionWatcher');
 const actualsDaily = require('./actualsDaily')
 
-    module.exports = async function checkProgress(stats, player, res) {
+module.exports = async function checkProgress(stats, player, res) {
     let actualQuest;
     let updates = {
         daily: {quests: [], updateNeeded: false},
@@ -14,8 +14,9 @@ const actualsDaily = require('./actualsDaily')
     for (let i = 0; i < 2; i++) {
         const currentQuestType = i === 0 ? "daily" : "weekly"
         const currentQuestArrayName = currentQuestType + "Quests"
-        player.solo[currentQuestArrayName].forEach(async (element, index) => {
-            if (element == undefined) return
+        for (const element of player.solo[currentQuestArrayName]) {
+            const index = player.solo[currentQuestArrayName].indexOf(element);
+            if (element == undefined) continue;
             actualQuest = quests[currentQuestType][element.id]
             actualQuest.weapon = element.weapon
             //Get actual values for each quest
@@ -39,7 +40,7 @@ const actualsDaily = require('./actualsDaily')
                     actualArray: nb.actualArray
                 })
             }
-        });
+        }
     }
     // If an update is needed
     if (updates.daily.updateNeeded || updates.weekly.updateNeeded) {
