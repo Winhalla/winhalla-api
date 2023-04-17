@@ -15,10 +15,9 @@ Tech details :
 * TOTP password auth for admin page (was removed in a previous release though)
 
 To understand more why all this code is here, you should take a look at the [live app](https://play.google.com/store/apps/details?id=com.winhalla.app)  
-This is my first more-than-100-line project ever, that has been updated and refactor an embarrassing amount of times.  
+This is my first more-than-100-line project ever, that has been updated and refactored countless times.  
 It has an embarrassing amount of code duplications, misoptimisation and an absence of documentation, that would take days to fix. As the gain would be close to zero since the project is no longer maintained, I decided to leave the project as is.  
-I learned the hard way that I should've documented this on the spot.  
-Also the absence of types in JS is horrible to deal with when refactoring.  
+Also the absence of types in JS is horrible to deal with when refactoring. I'll never start any project without typescript from now on  
 
 ---
 ### Quick explanation of the code if you're brave enough to go here.
@@ -55,5 +54,5 @@ Functions that are either here because routes files would be too long and unread
 
 ---
 ### A last word.
-This code is not meant to be run by anyone, as adapting it to allow anyone to run it in standalone would take a long time, and it would have absolutely no use.
-It's merely a showcase of my (approximative) coding abilities when I started programming.
+This code is not meant to be run by anyone, as adapting it to allow anyone to run it in standalone would take a long time, and would have absolutely no use.
+It's merely a showcase of my coding abilities when I started programming.
